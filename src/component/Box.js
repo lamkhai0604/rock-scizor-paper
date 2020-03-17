@@ -1,15 +1,13 @@
 import React from 'react'
 
-function Box(props){
-    return(
-        <div
-  className={`box ${props.winner ? 'winner' : 'loser'}`}
->
-  <h1>{props.name}</h1>
-  <img src={props.imgURL} alt={props.title}/>
-  <h3>{props.winner ? 'Won' : 'Loss'}</h3>
-</div>
-    )
+function Box(props) {
+  return (
+    <div className={`box ${props.winner ? 'winner' : 'loser'}`}>
+      <h1>{props.name}</h1>
+      <img src={props.imgURL} alt={props.title} />
+      <h3>{props.winner ? 'Won' : 'Loss'}</h3>
+    </div>
+  )
 }
 
 // import React, { Component } from 'react'
